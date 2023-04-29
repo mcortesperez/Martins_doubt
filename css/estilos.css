@@ -55,3 +55,9 @@ footer {
 .card-header{
     color: #E5CDFF;
 }
+
+.bcrumb {
+    margin-top: 70px;
+    background-color: #A896BB;
+    color: #10051B;
+}

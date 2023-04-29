@@ -32,16 +32,16 @@
                 <div class="collapse navbar-collapse" id="contenido-nav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Martin's labs
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="astronomylab.html">Astronomy lab</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="biologylab.html">Biology lab</a></li>
+                                <li><a class="dropdown-item" href="#">Biology lab</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="chemistrylab.html">Chemistry lab</a></li>
                                 <li><hr class="dropdown-divider"></li>
@@ -56,105 +56,21 @@
                             <a class="nav-link" href="martinsdoubt.html">Martin's doubt</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- Seccion principal -->
-        <div class="jumbotron"></div>
-
-            <!--Carousel-->
-            <div class="carousel slide carousel-fade" id="carousel-inicio" data-bs-ride="carousel"
-                        data-interval="3000">
-                <div class="carousel-inner text-uppercase">
-
-                    <div class="carousel-item active">
-                        <img src="./images/astronomy.jpg" alt="astronomy"
-                        class="d-block w-100">
-
-                        <div class="carousel-caption caption-loc">
-                            <h1>Welcome to Martin's doubt</h1>
-                        </div>
-
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/biology.jpg" alt="biology"
-                        class="d-block w-100">
-                        <div class="carousel-caption caption-loc">
-                            <h1>Welcome to Martin's doubt</h1>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/nuclear.jpg" alt="nuclear"
-                        class="d-block w-100">
-                        <div class="carousel-caption caption-loc">
-                            <h1>Welcome to Martin's doubt</h1>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <button data-bs-target="#carousel-inicio" type="button" class="carousel-control-prev" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                
-                <button data-bs-target="#carousel-inicio" type="button" class="carousel-control-next" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
-            </div>
-        </div>
-
-        <!-- Seccion descripcion -->
-        <div class="container-fluid">
-            <div class="d-flex flex-column flex-md-row card-descripcion justify-content-between">
-                <div class="card col-md-3 border card-item-description overflow-auto">
-                    <div class="card-header">
-                        <h2 class="text-center">Martin's mission</h2>
-                    </div>
-                    <div class="card-body">
-                        <p>Martin's mission is to share and acquire scientific 
-                            knowledge without exclusions, negligence, or manipulation 
-                            of information; this is accomplished through dissemination, 
-                            academia, and experimentation.</p>
-                    </div>
-                    <div class="card-footer"></div>
-                </div>
-                <div class="card col-md-3 border card-item-description overflow-auto">
-                    <div class="card-header">
-                        <h3 class="text-center">Martin's method</h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Martin proposes various methods for learning such as video
-                             classes, self-learning through articles, books, practical 
-                             proposals, exercises to be developed, etc. He also 
-                             facilitates interaction with other members of the 
-                             scientific community who are constantly willing to contribute 
-                             with their extensive knowledge.</p>
-                    </div>
-                    <div class="card-footer"></div>
-                </div>
-                <div class="card col-md-3 border card-item-description overflow-auto">
-                    <div class="card-header">
-                        <h2 class="text-center">Martin's friends</h2>
-                    </div>
-                    <div class="card-body">
-                        <p>
-                            Martin guides his commitment to science to be accessible 
-                            to anyone who wants to learn at any level of difficulty. 
-                            It is an open community, which does not mean it will be 
-                            easily manipulable. All content published is constantly 
-                            verified by the scientific community and previously accepted 
-                            through a thorough review process.
-                        </p>
-                    </div>
-                    <div class="card-footer"></div>
-                </div>
-            </div>           
+        <!-- Breadcrumb -->
+        <div class="container bcrumb">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="astronomylab.html">Astronomy</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Biology</li>
+                </ol>
+            </nav>
         </div>
 
         <!-- footer -->
@@ -197,6 +113,6 @@
 
         <!-- scripts -->
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
+        
     </body>
 </html>
