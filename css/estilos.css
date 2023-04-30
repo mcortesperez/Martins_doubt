@@ -6,6 +6,13 @@ footer {
     background-color: #483A58;
 }
 
+.form-cont {
+    border-radius: 10px;
+    margin-top: 120px;
+    margin-bottom: 70px;
+    background-color: #8C72A5;
+}
+
 .carousel-item img {
     height: 400px;
     width: 100%;
@@ -60,4 +67,17 @@ footer {
     margin-top: 70px;
     background-color: #A896BB;
     color: #10051B;
+}
+
+.cont-pills{
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.paragraph-content {
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
