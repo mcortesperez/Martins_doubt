@@ -5,7 +5,15 @@
   "main": "index.html",
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/styles.scss' -- npm run scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin images/* --out-dir dist/images",
+    "usemin":"usemin index.html -d dist --htmlmin -o dist/index.html && usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin martinsdoubt.html -d dist --htmlmin -o dist/martinsdoubt.html && usemin astronomylab.html -d dist --htmlmin -o dist/astronomylab.html && usemin biologylab.html -d dist --htmlmin -o dist/biologylab.html && usemin chemistrylab.html -d dist --htmlmin -o dist/chemistrylab.html && usemin physicslab.html -d dist --htmlmin -o dist/physicslab.html && usemin mathematicslab.html -d dist --htmlmin -o dist/mathematicslab.html && usemin statisticslab.html -d dist --htmlmin -o dist/statisticslab.html && usemin whatobjective.html -d dist --htmlmin -o dist/whatobjective.html && usemin whoproyect.html -d dist --htmlmin -o dist/whoproyect.html",
+    "build":"npm run clean && npm run scss && npm run imagemin && npm run usemin"
+
   },
   "repository": {
     "type": "git",
@@ -18,11 +26,20 @@
   },
   "homepage": "https://github.com/mcortesperez/Martins_doubt#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "copyfiles": "^2.4.1",
+    "cssmin": "^0.4.3",
+    "htmlmin": "^0.0.7",
+    "lite-server": "^2.6.1",
+    "node-sass": "^8.0.0",
+    "onchange": "^7.1.0",
+    "rimraf": "^5.0.0",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.0.7"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.7",
     "bootstrap": "^5.2.3",
+    "concurrently": "^8.0.1",
     "jquery": "^3.6.4"
   }
 }

@@ -1,0 +1,96 @@
+$purple_back: #0F0718;
+$purple_nav: #01010F;
+$purple_form: #8C72A5;
+$purple_footer: #483A58;
+$purple_cardit: #6E6776;
+$purple_cardbody: #DAB9FF;
+$purple_cardheader: #E5CDFF;
+$purple_bcrumb: #A896BB;
+$purple_bcrumbtext: #10051B;
+$white_par: #FFFFFF;
+
+@mixin margenes($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+
+body {
+    background-color: $purple_back;
+  }
+
+footer {
+    background-color: $purple_footer;
+}
+
+.form-cont {
+    border-radius: 10px;
+    @include margenes(120px, 70px);
+    background-color: $purple_form;
+}
+
+.carousel-item img {
+    height: 400px;
+    width: 100%;
+}
+
+.caption-loc {
+    top: 45%;
+}
+
+.logo{
+    height: 35px;
+    width: 45px;
+}
+
+.jumbotron {
+    @include margenes(60px, 0px);
+}
+
+.navbar {
+    background-color: $purple_nav;
+}
+
+.nav-item{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card-descripcion{
+    @include margenes(30px, 30px);
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 300px;
+}
+
+.card-item-description{
+    @include margenes(10px, 10px);
+    height: 250px;
+    background-color: $purple_cardit;
+}
+
+.card-body{
+    color: $purple_cardbody;
+}
+
+.card-header{
+    color: $purple_cardheader;
+}
+
+.bcrumb {
+    @include margenes(70px, 0px);
+    background-color: $purple_bcrumb;
+    color: $purple_bcrumbtext;
+}
+
+.cont-pills{
+    @include margenes(70px, 10px);
+}
+
+.paragraph-content {
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: $white_par;
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
